@@ -41,8 +41,8 @@
 ;;; Code:
 
 (defconst autogen-mode--font-lock
-  ;; (regexp-opt '("autogen5" "template" "break" "case" "comment" "continue" "debug" "define" "elif" "else" "endef" "endfor" "endif" "endwhile" "esac" "expr" "for" "in" "if" "include" "invoke" "return" "select" "unknown" "while"))
-  '(("\\b\\(?:autogen5\\|break\\|c\\(?:ase\\|o\\(?:mment\\|ntinue\\)\\)\\|de\\(?:bug\\|fine\\)\\|e\\(?:l\\(?:if\\|se\\)\\|nd\\(?:ef\\|for\\|if\\|while\\)\\|sac\\|xpr\\)\\|for\\|i\\(?:n\\(?:\\(?:clud\\|vok\\)e\\)\\|[fn]\\)\\|return\\|select\\|template\\|unknown\\|while\\)\\b" . font-lock-keyword-face)
+  ;; (regexp-opt '("autogen5" "template" "break" "case" "comment" "continue" "debug" "define" "elif" "else" "enddef" "endfor" "endif" "endwhile" "esac" "expr" "for" "in" "if" "include" "invoke" "return" "select" "unknown" "while"))
+  '(("\\b\\(?:autogen5\\|break\\|c\\(?:ase\\|o\\(?:mment\\|ntinue\\)\\)\\|de\\(?:bug\\|fine\\)\\|e\\(?:l\\(?:if\\|se\\)\\|nd\\(?:def\\|for\\|if\\|while\\)\\|sac\\|xpr\\)\\|for\\|i\\(?:n\\(?:\\(?:clud\\|vok\\)e\\)\\|[fn]\\)\\|return\\|select\\|template\\|unknown\\|while\\)\\b" . font-lock-keyword-face)
     ("__\\(?:[[:alpha:]][[:alnum:]]*\\)__" . font-lock-builtin-face)
     ("\\[\\+\\|\\+\\]" . font-lock-preprocessor-face)
     ("\\(\\-\\*\\-\\).*\\1" . font-lock-comment-face)
