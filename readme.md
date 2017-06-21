@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a [**GNU AutoGen**](https://www.gnu.org/software/autogen/) template editing mode for [**GNU Emacs**](https://www.gnu.org/software/emacs/). It uses [**polymode**](https://github.com/vitoshka/polymode) package to combine the root `c-mode` with `autogen-mode` in template directives. Using `scheme-mode` for scheme chunks into templates currently not supported.
+This is a [GNU AutoGen](https://www.gnu.org/software/autogen/) template editing mode for [GNU Emacs](https://www.gnu.org/software/emacs/). It uses [`polymode`](https://github.com/vitoshka/polymode) package to combine the root `c-mode` with `autogen-mode` in template directives. Using `scheme-mode` for scheme chunks into templates currently not supported.
 
 ## Installation
 
@@ -14,7 +14,7 @@ This is a [**GNU AutoGen**](https://www.gnu.org/software/autogen/) template edit
 
 ### Manually
 
-First install *polymode* package from [*here*](https://github.com/vitoshka/polymode).
+First install `polymode` package from [*here*](https://github.com/vitoshka/polymode).
 
 ```sh
 git clone https://github.com/katyo/autogen-mode.git
@@ -23,9 +23,7 @@ git clone https://github.com/katyo/autogen-mode.git
 Add "autogen-mode" directory to your emacs path and load mode to use:
 
 ```lisp
-(setq load-path
-      (append '("path/to/autogen-mode/")
-      load-path))
+(add-to-list 'load-path "path/to/autogen-mode")
 (require 'polymode-c-autogen)
 ```
 
