@@ -47,7 +47,7 @@
     ("\\(?:#\\|\\bcomment\\b\\).*" . font-lock-comment-face)
     ("\\b\\(?:autogen[[:digit:]]?\\|break\\|c\\(?:\\(?:as\\|ontinu\\)e\\)\\|de\\(?:bug\\|fine\\)\\|e\\(?:l\\(?:if\\|se\\)\\|nd\\(?:def\\|for\\|if\\|while\\)\\|sac\\|xpr\\)\\|for\\|i\\(?:n\\(?:\\(?:clud\\|vok\\)e\\)\\|[fn]\\)\\|return\\|select\\|template\\|unknown\\|while\\)\\b" . font-lock-keyword-face)
     ("__\\(?:[[:alpha:]][[:alnum:]]*\\)__" . font-lock-builtin-face)
-    ("\"\\(?:[^\"]+\\|\\\"\\)\"" . font-lock-string-face))
+    ("\"\\(?:\\\\\"\\|[^\"]+\\)*\"" . font-lock-string-face))
   "GNU AutoGen mode font lock")
 
 (define-derived-mode autogen-mode text-mode "autogen"
